@@ -21,3 +21,12 @@ qsub -l nodes=1:gen9:ppn=2 -d . job4.sh
 echo '$HOME/GROMACS/gromacs-2021.3-install/bin/gmx trjconv -s nvt.tpr -f traj_comp.xtc -o traj_comp_whole.pdb -pbc whole <<< "0"' > job5.sh
 qsub -l nodes=1:gen9:ppn=2 -d . job5.sh
 ```
+## download files
+from your terminal 
+``bash
+sftp devcloud
+cd tutorials-in-progress/basic-intro-water/data
+get  *.pdb
+exit
+```
+view pdb files in pymol or Avogadro or similar 
