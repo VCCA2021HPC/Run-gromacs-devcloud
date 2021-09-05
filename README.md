@@ -23,7 +23,7 @@ qsub -l nodes=1:gen9:ppn=2 -d . job5.sh
 ```
 ## download files
 from your terminal 
-``bash
+```bash
 sftp devcloud
 cd tutorials-in-progress/basic-intro-water/data
 get  *.pdb
